@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<master:MasterPageSetupWizard xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MedsReadyMobile.Pages.Setup_PINPage"
+             xmlns:master="clr-namespace:MedsReadyMobile.MasterPages;assembly=MedsReadyMobile">
+  <StackLayout>
+    <Label Text="{Binding MainText}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+  </StackLayout>
+</master:MasterPageSetupWizard>

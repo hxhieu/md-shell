@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MedsReadyMobile.UserControls.WizardNavigationMenu"
+             Orientation="Horizontal"
+             HorizontalOptions="FillAndExpand">
+  <Button Text="Back" Command="{Binding CurrentItem.SecondaryCommand}" HorizontalOptions="FillAndExpand" />
+  <StackLayout HorizontalOptions="FillAndExpand">
+    <Label Text="{Binding CurrentItem.Id}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+  </StackLayout>
+  <Button Text="Next" Command="{Binding CurrentItem.PrimaryCommand}" HorizontalOptions="FillAndExpand" />
+</StackLayout>

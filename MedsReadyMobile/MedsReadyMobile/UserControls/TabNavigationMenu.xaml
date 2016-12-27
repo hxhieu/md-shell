@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout  xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="MedsReadyMobile.UserControls.TabNavigationMenu"
+              xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+              Orientation="Horizontal"
+              HorizontalOptions="FillAndExpand">
+  <flv:FlowListView FlowItemsSource="{Binding Items}" FlowColumnCount="3" HeightRequest="{Binding HeightRequest}">
+    <flv:FlowListView.FlowColumnTemplate>
+      <DataTemplate>
+        <Button HorizontalOptions="FillAndExpand" Text="{Binding Display.Text}" Command="{Binding PrimaryCommand} "/>
+      </DataTemplate>
+    </flv:FlowListView.FlowColumnTemplate>
+  </flv:FlowListView>
+</StackLayout>
