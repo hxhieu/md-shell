@@ -5,5 +5,6 @@
              xmlns:master="clr-namespace:MedsReadyMobile.MasterPages;assembly=MedsReadyMobile">
   <StackLayout>
     <Label Text="{Binding MainText}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+    <Button Text="Detail Page" Command="{Binding GotoDetails}" />
   </StackLayout>
 </master:MasterPageBottomMenu>

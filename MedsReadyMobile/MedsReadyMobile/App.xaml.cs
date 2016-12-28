@@ -12,8 +12,8 @@ namespace MedsReadyMobile
 
             InitializeComponent();
 
-            //MainPage = FreshMvvmPageHelper.GenerateSetupWizardNavigation() as Page;
-            MainPage = FreshMvvmPageHelper.GeneratePrescriptionNavigation() as Page;
+            MainPage = FreshMvvmPageHelper.GenerateSetupWizardNavigation() as Page;
+            //MainPage = FreshMvvmPageHelper.GeneratePrescriptionNavigation() as Page;
         }
 
         protected override void OnStart()
